@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+}
+
+.progress {
+  width: 31.25rem;
+  height: 3.125rem;
+  margin: 9rem auto;
+  border: 1px solid #fff;
+  padding: 0.75rem 0.625rem;
+  box-shadow: 0 0 0.625rem #aaa;
+}
+
+.progress .bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(gold, #c85, gold);
+  background-repeat: repeat;
+  animation: shine 4s ease-in infinite;
+  transition: width 6s ease-out 3s;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 3.125rem;
+  }
+}
